@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Getting started with Drion
+    url: https://actinis.io/drion
+    about: Installing Drion, getting apps through the GrapheneOS App Store, and updates.

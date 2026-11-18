@@ -1,0 +1,74 @@
+name: Bug report
+description: Drion crashed, failed to install or update, or did something wrong.
+labels: ["triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This tracker is public.** Everything you write or attach here can be read by anyone.
+
+        The quickest way to file a report is **Report a problem** in the Drion launcher: it fills in the version and system fields below.
+
+        Do not post passwords, account names, phone numbers or other personal data. A diagnostic archive can contain app names, file paths and log lines from your system: open it and check it before you attach it. If you would rather not publish it, write to contact@actinis.io instead and mention this issue.
+
+        One problem per report, please. Check the [known issues](https://github.com/Actinis-Drion/issue-tracker/issues?q=is%3Aissue+is%3Apinned) first.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you saw, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What you did before it happened. Say whether it happens every time.
+      placeholder: |
+        1. Open ...
+        2. Tap ...
+        3. ...
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Linux desktop (Flatpak)
+        - Ubuntu Touch
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Drion version and build
+      description: Settings → About → Version. On the desktop, the Copy button copies this line.
+      placeholder: Drion 2026.11.20.1 (alpha), build 2026.11.20.1+0123abcd4
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: System
+      description: Distribution and version, or phone model and Ubuntu Touch version; desktop session; GPU. Report a problem fills this in.
+      placeholder: |
+        Distribution or device:
+        Desktop session:
+        GPU:
+  - type: input
+    id: app
+    attributes:
+      label: Android app involved
+      description: The app's name and version, if the problem happened in an app.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs, screenshots and diagnostic archive
+      description: Drag files here. Create the archive with Create diagnostic archive in the launcher's side bar (desktop) or Settings → Diagnostic archive (Ubuntu Touch), and check its contents first.
+  - type: checkboxes
+    id: public-ack
+    attributes:
+      label: Before you submit
+      options:
+        - label: I understand that this report and its attachments are public, and I checked them for personal data.
+          required: true

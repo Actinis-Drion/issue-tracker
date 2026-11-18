@@ -1,0 +1,90 @@
+name: App compatibility report
+description: An Android app does not install, does not start, or does not work fully in Drion.
+labels: ["app-compatibility", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This tracker is public.** Everything you write or attach here can be read by anyone.
+
+        Search the [existing reports](https://github.com/Actinis-Drion/issue-tracker/issues?q=is%3Aissue+label%3Aapp-compatibility) for the app first and add to that one if it exists.
+
+        Apps that depend on Play Integrity or device attestation may refuse to start, refuse to sign in, or hide some features in Drion. That is a known limitation of the alpha. Report it anyway if you are not sure, and say what message the app shows.
+
+        Do not post passwords, account names or other personal data, and check a diagnostic archive before you attach it. If you would rather not publish it, write to contact@actinis.io instead and mention this issue.
+  - type: input
+    id: app
+    attributes:
+      label: App name and version
+      placeholder: Example App 4.2.1
+    validations:
+      required: true
+  - type: dropdown
+    id: app-source
+    attributes:
+      label: Where did you get the app?
+      options:
+        - Google Play, installed through the GrapheneOS App Store
+        - F-Droid
+        - Another app store
+        - An APK file
+    validations:
+      required: true
+  - type: dropdown
+    id: result
+    attributes:
+      label: How far does it get?
+      options:
+        - It does not install
+        - It closes or crashes when it starts
+        - It starts, but some features do not work
+        - It works, with problems
+        - It works fully
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What works, what does not, and any message the app shows. Steps help.
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Linux desktop (Flatpak)
+        - Ubuntu Touch
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Drion version and build
+      description: Settings → About → Version. On the desktop, the Copy button copies this line.
+      placeholder: Drion 2026.11.20.1 (alpha), build 2026.11.20.1+0123abcd4
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: System
+      description: Distribution and version, or phone model and Ubuntu Touch version; desktop session; GPU. Report a problem fills this in.
+      placeholder: |
+        Distribution or device:
+        Desktop session:
+        GPU:
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs, screenshots and diagnostic archive
+      description: Drag files here. Create the archive with Create diagnostic archive in the launcher's side bar (desktop) or Settings → Diagnostic archive (Ubuntu Touch), and check its contents first.
+  - type: checkboxes
+    id: public-ack
+    attributes:
+      label: Before you submit
+      options:
+        - label: I understand that this report and its attachments are public, and I checked them for personal data.
+          required: true
