@@ -55,5 +55,4 @@ with the fix is out.
 
 ## Chat
 
-The Drion Telegram group is for questions and discussion. Please file bugs
-here, and never post diagnostic archives in the chat.
+Drion has a Telegram group for each platform, for questions and discussion: [Linux desktop](https://t.me/drion_desktop) and [Ubuntu Touch](https://t.me/drion_ubuntu_touch). Please file bugs here, and never post diagnostic archives in the chat.
