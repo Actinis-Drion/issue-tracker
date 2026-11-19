@@ -11,7 +11,7 @@ body:
 
         Apps that depend on Play Integrity or device attestation may refuse to start, refuse to sign in, or hide some features in Drion. That is a known limitation of the alpha. Report it anyway if you are not sure, and say what message the app shows.
 
-        Do not post passwords, account names or other personal data, and check a diagnostic archive before you attach it. If you would rather not publish it, write to contact@actinis.io instead and mention this issue.
+        Do not post passwords, account names or other personal data. Keep diagnostic archives and logs out of public issues and Telegram. Email small files to contact@actinis.io and mention the issue number. For larger files, upload them to Google Drive or a similar service, restrict access to contact@actinis.io, and email the link with the issue number.
   - type: input
     id: app
     attributes:
@@ -79,8 +79,8 @@ body:
   - type: textarea
     id: logs
     attributes:
-      label: Logs, screenshots and diagnostic archive
-      description: Drag files here. Create the archive with Create diagnostic archive in the launcher's side bar (desktop) or Settings → Diagnostic archive (Ubuntu Touch), and check its contents first.
+      label: Screenshots and diagnostic handoff
+      description: Optional screenshots are public. Check them for personal data before attaching them. To collect diagnostics for email, use Create diagnostic archive in the launcher's sidebar (desktop) or Settings → Diagnostic archive (Ubuntu Touch).
   - type: checkboxes
     id: public-ack
     attributes:

@@ -9,7 +9,7 @@ body:
 
         The quickest way to file a report is **Report a problem** in the Drion launcher: it fills in the version and system fields below.
 
-        Do not post passwords, account names, phone numbers or other personal data. A diagnostic archive can contain app names, file paths and log lines from your system: open it and check it before you attach it. If you would rather not publish it, write to contact@actinis.io instead and mention this issue.
+        Do not post passwords, account names, phone numbers or other personal data. Keep diagnostic archives and logs out of public issues and Telegram. Email small files to contact@actinis.io and mention the issue number. For larger files, upload them to Google Drive or a similar service, restrict access to contact@actinis.io, and email the link with the issue number.
 
         One problem per report, please. Check the [known issues](https://github.com/Actinis-Drion/issue-tracker/issues?q=is%3Aissue+is%3Apinned) first.
   - type: textarea
@@ -63,8 +63,8 @@ body:
   - type: textarea
     id: logs
     attributes:
-      label: Logs, screenshots and diagnostic archive
-      description: Drag files here. Create the archive with Create diagnostic archive in the launcher's side bar (desktop) or Settings → Diagnostic archive (Ubuntu Touch), and check its contents first.
+      label: Screenshots and diagnostic handoff
+      description: Optional screenshots are public. Check them for personal data before attaching them. To collect diagnostics for email, use Create diagnostic archive in the launcher's sidebar (desktop) or Settings → Diagnostic archive (Ubuntu Touch).
   - type: checkboxes
     id: public-ack
     attributes:

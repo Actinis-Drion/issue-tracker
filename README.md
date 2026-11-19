@@ -34,11 +34,10 @@ version and build from Settings → About.
 Everything you write or attach here can be read by anyone.
 
 - Do not post passwords, account names, phone numbers or other personal data.
-- A diagnostic archive can contain app names, file paths and log lines from
-  your system. Open it and check it before you attach it.
-- GitHub accepts attachments up to 25 MB. If an archive is larger, or you would
-  rather not publish it, send it to contact@actinis.io and mention the issue
-  number.
+- Never post diagnostic archives or logs in this tracker or in Telegram.
+  Email small files to contact@actinis.io and mention the issue number. For
+  larger files, upload them to Google Drive or a similar service, restrict
+  access to contact@actinis.io, and email the link with the issue number.
 
 ## Crash reports
 
